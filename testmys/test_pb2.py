@@ -11,7 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\ntest.proto\x12\ngrpc_mysql\x1a\x1cgoogle/api/annotations.proto\"J\n\x04User\x12\x10\n\x08stu_name\x18\x01 \x01(\t\x12\x0e\n\x06stu_id\x18\x02 \x01(\x03\x12\x0f\n\x07stu_age\x18\x03 \x01(\x03\x12\x0f\n\x07stu_sex\x18\x04 \x01(\t\",\n\x0b\x43ommonReply\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x03\x12\x0f\n\x07message\x18\x02 \x01(\t\"1\n\nQueryReply\x12#\n\tuser_list\x18\x01 \x03(\x0b\x32\x10.grpc_mysql.User\"/\n\rCommonRequest\x12\x1e\n\x04\x63ond\x18\x01 \x01(\x0b\x32\x10.grpc_mysql.User2\xb8\x02\n\x0bUserStorage\x12\x63\n\rQueryUserInfo\x12\x19.grpc_mysql.CommonRequest\x1a\x16.grpc_mysql.QueryReply\"\x1f\x82\xd3\xe4\x93\x02\x19\"\x08/v1/User:\rcommonRequest\x12@\n\nInsertUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReply\x12@\n\nDeleteUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReply\x12@\n\nUpdateUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReplyb\x06proto3'
-  ,
-  dependencies=[google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
+  serialized_pb=b'\n\ntest.proto\x12\ngrpc_mysql\"J\n\x04User\x12\x10\n\x08stu_name\x18\x01 \x01(\t\x12\x0e\n\x06stu_id\x18\x02 \x01(\x03\x12\x0f\n\x07stu_age\x18\x03 \x01(\x03\x12\x0f\n\x07stu_sex\x18\x04 \x01(\t\",\n\x0b\x43ommonReply\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x03\x12\x0f\n\x07message\x18\x02 \x01(\t\"1\n\nQueryReply\x12#\n\tuser_list\x18\x01 \x03(\x0b\x32\x10.grpc_mysql.User\"/\n\rCommonRequest\x12\x1e\n\x04\x63ond\x18\x01 \x01(\x0b\x32\x10.grpc_mysql.User2\x9f\x02\n\x0bUserStorage\x12\x44\n\rQueryUserInfo\x12\x19.grpc_mysql.CommonRequest\x1a\x16.grpc_mysql.QueryReply\"\x00\x12\x42\n\nInsertUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReply\"\x00\x12\x42\n\nDeleteUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReply\"\x00\x12\x42\n\nUpdateUser\x12\x19.grpc_mysql.CommonRequest\x1a\x17.grpc_mysql.CommonReply\"\x00\x62\x06proto3'
+)
 
 
 
@@ -75,8 +73,8 @@ _USER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56,
-  serialized_end=130,
+  serialized_start=26,
+  serialized_end=100,
 )
 
 
@@ -114,8 +112,8 @@ _COMMONREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=132,
-  serialized_end=176,
+  serialized_start=102,
+  serialized_end=146,
 )
 
 
@@ -146,8 +144,8 @@ _QUERYREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=178,
-  serialized_end=227,
+  serialized_start=148,
+  serialized_end=197,
 )
 
 
@@ -178,8 +176,8 @@ _COMMONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=229,
-  serialized_end=276,
+  serialized_start=199,
+  serialized_end=246,
 )
 
 _QUERYREPLY.fields_by_name['user_list'].message_type = _USER
@@ -227,8 +225,8 @@ _USERSTORAGE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=279,
-  serialized_end=591,
+  serialized_start=249,
+  serialized_end=536,
   methods=[
   _descriptor.MethodDescriptor(
     name='QueryUserInfo',
@@ -237,7 +235,7 @@ _USERSTORAGE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_COMMONREQUEST,
     output_type=_QUERYREPLY,
-    serialized_options=b'\202\323\344\223\002\031\"\010/v1/User:\rcommonRequest',
+    serialized_options=None,
     create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(

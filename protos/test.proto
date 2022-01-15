@@ -2,27 +2,22 @@ syntax = "proto3";
 
 package grpc_mysql;
 //import "google/api/http.proto";
-import "google/api/annotations.proto";
+//import "google/api/annotations.proto";
 //import "google/protobuf/timestamp.proto";
 
 service UserStorage{
-    rpc QueryUserInfo (CommonRequest) returns (QueryReply) {
-        option(google.api.http) = {
-          post:"/v1/User"
-          body:"commonRequest"
-        };
-    }
-	rpc InsertUser    (CommonRequest) returns (CommonReply);
-	rpc DeleteUser    (CommonRequest) returns (CommonReply);
-	rpc UpdateUser    (CommonRequest) returns (CommonReply);
+    rpc QueryUserInfo (CommonRequest) returns (QueryReply) {}
+	  rpc InsertUser    (CommonRequest) returns (CommonReply) {}
+	  rpc DeleteUser    (CommonRequest) returns (CommonReply) {}
+	  rpc UpdateUser    (CommonRequest) returns (CommonReply) {}
 }
 
 
 message User {
     string stu_name=1;
     int64 stu_id=2;
-	int64 stu_age=3;
-	string stu_sex=4;
+	  int64 stu_age=3;
+	  string stu_sex=4;
 }
 
 message CommonReply{

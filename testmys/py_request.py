@@ -2,7 +2,7 @@ import json
 
 import requests
 
-data = {"user_list": [{"stu_name": "小飞"}]}
+data = {"cond":{"stu_name": "小飞"}}
 # data = json.dumps(data)
 
 try:
